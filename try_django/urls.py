@@ -20,7 +20,8 @@ from blog.views import (blog_post_detail_page)
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('blog/', blog_post_detail_page),
+    #  path('blog/', blog_post_detail_page),
+    path('blog/<str:slug>/', blog_post_detail_page),
     path('', home_page),
     path('contact/', contact_page),
     path('about/', about_page),
