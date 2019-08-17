@@ -9,7 +9,7 @@ def about_page(request):
     return render(request, "about_page.html", {"title": "About"})
     
 def contact_page(request):
-    return render(request, "contact_page.html", {"title": "Contact"})
+    return render(request, "form.html", {"title": "Contact"})
     
 def links_page(request):
     return render(request, "links_page.html", {"title": "Links"})
