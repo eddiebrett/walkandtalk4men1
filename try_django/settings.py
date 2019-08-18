@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['4e0abee999e44827807f85ace8f56ea9.vfs.cloud9.eu-west-1.amazonaws.com']
 
+LOGIN_URL = "/login"
+
 
 # Application definition
 
