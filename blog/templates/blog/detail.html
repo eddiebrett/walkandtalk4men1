@@ -2,8 +2,7 @@
 
 {% block content %}
 
-<h1>{{ object.title }}</h1>
-<p> {{ object.content }}</p>
+{% include 'blog/list-inline.html' with blog_post=object detail=True %}
 
     <div class='row'>
 
@@ -17,4 +16,5 @@
     {% endif %}
 
     </div>
+     
 {% endblock %}
