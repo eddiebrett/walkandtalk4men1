@@ -23,6 +23,8 @@ class BlogPostQuerySet(models.QuerySet):
                     )
 
         return self.filter(lookup)
+    
+    
 
 
 class BlogPostManager(models.Manager):
