@@ -33,6 +33,7 @@ urlpatterns = [
     re_path(r'^about/$', about_page),
     path('contact/', contact_page),
     path('admin/', admin.site.urls),
+    path('links/', links_page),
 ]
 
 if settings.DEBUG:

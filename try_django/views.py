@@ -1,10 +1,11 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from .forms import ContactForm
+from django.core.mail import send_mail
 
 def home_page(request):
     my_title= "Home page"
-    return render(request, "home_page.html", {"title": my_title})
+    return render(request, "home_page.html", {"title": "Home"})
 
 def about_page(request):
     return render(request, "about_page.html", {"title": "About"})
@@ -12,7 +13,13 @@ def about_page(request):
 def contact_page(request):
     form = ContactForm(request.POST or None)
     if form.is_valid():
-        print(form.cleaned_data)
+        send_mail(
+            'Contact',
+            form.cleaned_data,
+            'mace@example.com',
+            ['mace@example.com'],
+            fail_silently=False,
+        )
         form = ContactForm()
     context = {
         "title": "Contact", 

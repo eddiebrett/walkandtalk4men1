@@ -1,3 +1,12 @@
 {% extends "base.html" %}
 
-{% block %} <p> Loads of mental health website links </p> {% endblock %}
+{% block content %}
+
+{% if title %}
+<h1>{{ title }}</h1>
+{% endif %}
+<p>Just like it says on the tin we are a group that brings blokes together, goes for walks and talk in a casual, open and inviting manner. If the place you are at requires deeper assistance we thoroughly recommend looking at the great work that the charity MIND do. They can offer specialist help far beyond our capability. Simply click on the logo below...</p>
+<a href="https://www.mind.org.uk/" target="_blank"><img src="/media/image/mind.png" class="center"></img></a>
+{% endblock %}
+
+

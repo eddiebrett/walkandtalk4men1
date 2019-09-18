@@ -130,9 +130,10 @@ STATICFILES_DIRS = [
 MEDIA_ROOT = os.path.join(LOCAL_STATIC_CDN_PATH, 'media')
 MEDIA_URL = '/media/' # django-storages
 
-
-
-
+EMAIL_HOST = "SMTP.gmail.com"
+EMAIL_HOST_USER = ""
+EMAIL_HOST_PASSWORD = ""
+EMAIL_USE_SSL = True
 
 
 

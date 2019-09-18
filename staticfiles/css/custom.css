@@ -1,3 +1,64 @@
 body{
-    background: #3d487d;
+    background:white;
+}
+
+/*----- navbar -----*/
+
+.bg-light {
+    background-color: #3d487d !important;
+}
+
+.btn-outline-success {
+    border: 2px solid white!important;
+    background-color: transparent!important;
+    color: white!important;
+}
+
+.navbar{
+  font-family: 'Anton', sans-serif;
+  
+}
+
+h1{
+    font-family: 'Anton', sans-serif;
+}
+.navbar.navbar-light .navbar-nav .nav-item .nav-link {
+    color: #f8f9fa;
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(215, 163, 93);
+}
+
+
+
+
+
+/*---- form ----*/
+.container{
+    text-align: center;
+    margin:50px 0px; padding:0px;
+    
+}
+
+form{
+    margin-bottom: 1em;
+}
+.cyan.darken-3 {
+    background-color: #3d808a!important;
+}
+
+
+
+/*--- links ----*/
+.center:hover {
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
