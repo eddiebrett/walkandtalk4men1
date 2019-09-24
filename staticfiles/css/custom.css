@@ -64,6 +64,13 @@ h1{
   margin-bottom: 2em;
 }
 
-
+.james-pic {
+    width: 30%;
+    padding-bottom: 1em;
+    margin-left: auto;
+  margin-right: auto;
+  display: block;
+    
+}
 
 /*---  footer ----*/
