@@ -23,7 +23,7 @@ SECRET_KEY = '+ic8cucqn9k$8v$x940il^-3%df2$q%m%0ns(91^ur($(^+&-9'
 DEBUG = True
 
 ALLOWED_HOSTS = ['4e0abee999e44827807f85ace8f56ea9.vfs.cloud9.eu-west-1.amazonaws.com',
-                'https://git.heroku.com/walk-blog.git']
+                'walk-blog.herokuapp.com']
 
 LOGIN_URL = '/login'
 
