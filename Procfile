@@ -1,1 +1,1 @@
-web: gunicorn try_django/wsgi:application
+web: gunicorn try_django.wsgi:application
