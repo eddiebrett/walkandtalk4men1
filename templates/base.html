@@ -1,4 +1,4 @@
-
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -15,7 +15,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
     <!-- Material Design Bootstrap -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.9/css/mdb.min.css" rel="stylesheet">
-     <link rel="stylesheet" href="/static/css/custom.css">
+    <link rel="stylesheet" href="{% static 'css/custom.css' %}">
     <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
    
     <title>WAT4M</title>
@@ -23,9 +23,10 @@
 </head>
 
 <body>
+    
     {% include 'navbar.html' %}
     <div class='section content'>
-       <img src="/media/image/walkandtalk.png" class="img-fluid">
+      <img src="{{ MEDIA_URL }}/image/walkandtalk.png" class="img-fluid">
     </div>
     <div class="container-fluid">
 

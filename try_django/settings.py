@@ -147,11 +147,12 @@ STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'staticfiles')
 ] 
 
+
 MEDIAFILES_LOCATION = 'media'
 DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
 
 MEDIA_ROOT = os.path.join(LOCAL_STATIC_CDN_PATH, 'media')
-MEDIA_URL = '/media/' # django-storages
+MEDIA_URL = "https://%s/%s/" % (AWS_S3_CUSTOM_DOMAIN, MEDIAFILES_LOCATION)
 
 EMAIL_HOST = "SMTP.gmail.com"
 EMAIL_HOST_USER = ""
