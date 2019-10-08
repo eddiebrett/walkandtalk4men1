@@ -22,7 +22,7 @@ def blog_post_list_view(request):
     # could be search
     qs = BlogPost.objects.all().published() # queryset -> list of python object
     
-    my_qs = BlogPost.objects.filter(user=request.user)
+    my_qs = BlogPost.objects.filter(request)
     qs = (qs | my_qs).distinct()
     template_name = 'blog/list.html'
     context = {'object_list': qs}
