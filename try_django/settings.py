@@ -137,7 +137,7 @@ AWS_SECRET_ACCESS_KEY = os.environ.get("AWS_SECRET_ACCESS_KEY")
 AWS_DEFAULT_ACL = None
 
 AWS_S3_CUSTOM_DOMAIN = '%s.s3.amazonaws.com' % AWS_STORAGE_BUCKET_NAME
-STATICFILES_LOCATION = 'static_cdn_test'
+STATICFILES_LOCATION = 'staticfiles'
 STATICFILES_STORAGE = 'custom_storages.StaticStorage'
 
 
@@ -145,9 +145,9 @@ STATIC_URL = '/static/'
 
 LOCAL_STATIC_CDN_PATH = os.path.join(os.path.dirname(BASE_DIR), 'static_cdn_test')
 
-STATIC_ROOT = os.path.join(LOCAL_STATIC_CDN_PATH, 'static') # live cdn AWS S3
+STATIC_ROOT = os.path.join(BASE_DIR, 'static') # live cdn AWS S3
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'staticfiles')
+    # os.path.join(BASE_DIR, 'static')
 ] 
 
 
