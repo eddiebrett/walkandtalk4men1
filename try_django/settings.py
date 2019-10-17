@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 
 ALLOWED_HOSTS = ['4e0abee999e44827807f85ace8f56ea9.vfs.cloud9.eu-west-1.amazonaws.com',
-                'walk-blog.herokuapp.com']
+                'walk-blog.herokuapp.com', 'www.walkandtalk4men.com']
 
 LOGIN_URL = '/login'
 
