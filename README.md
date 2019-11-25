@@ -20,7 +20,7 @@ The website includes all of the social media link in the footer. By clicking on 
 
 The search in the top right corner picks up key words in the title of the blogs and will take you to the blog with what you are looking for.
 
-<img src="{% static 'image/wireframe.png' %}" class="center-img">
+<img src="/dev/trydjango/src/static/image/wireframe.jpg" class="center-img">
 
 ## Features
 
